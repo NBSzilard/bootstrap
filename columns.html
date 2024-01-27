@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .h-10 {
+            height: 10rem;
+        }
+    </style>
     <title>Bootstrap 5.3 Columns</title>
 </head>
 
-<body class="bg-dark text-white text-center">
+<body class="bg-dark text-white">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -42,7 +47,202 @@
         </div>
     </nav>
 
-    <h1 class="mb-5 mt-4 display-1">Bootstrap Columns</h1>
+    <div class="text-center">
+        <h1 class="mb-5 mt-4 display-1">Bootstrap Columns</h1>
+    </div>
+
+    <div class="container">
+        <p class="display-6 mt-5">Responsive columns</p>
+        <div class="row bg-info h-10 m-3">
+            <div class="col-md-3 col-sm-6">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Align self columns</p>
+        <div class="row bg-info h-10 m-3 justify-content-between">
+            <div class="col-3 align-self-start text-align-start">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-3 align-self-center">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-3 align-self-end">
+                <div class="bg-primary p-3 text-white text-center mt-3 mb-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Column width</p>
+        <div class="row bg-info m-3 justify-content-center">
+            <div class="col-3 mb-3">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-6 mb-3">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns (wider)
+                </div>
+            </div>
+            <div class="col-3 mb-3">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Column order</p>
+        <div class="row bg-info m-3">
+            <div class="col-3 mb-3 order-4">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    1
+                </div>
+            </div>
+            <div class="col-3 mb-3 order-3">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    2
+                </div>
+            </div>
+            <div class="col-3 mb-3 order-2">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    3
+                </div>
+            </div>
+            <div class="col-3 mb-3 order-1">
+                <div class="bg-primary p-3 text-white text-center mt-3">
+                    4
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content start</p>
+        <div class="row bg-info m-3 justify-content-start">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content end</p>
+        <div class="row bg-info m-3 justify-content-end">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content center</p>
+        <div class="row bg-info m-3 justify-content-center">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content between</p>
+        <div class="row bg-info m-3 justify-content-between">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content around</p>
+        <div class="row bg-info m-3 justify-content-around">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+        <p class="display-6 mt-5">Justify content evenly</p>
+        <div class="row bg-info m-3 justify-content-evenly">
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+            <div class="col-2 mb-3">
+                <div class="bg-primary text-white text-center mt-3 p-3">
+                    Columns
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
