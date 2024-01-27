@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Bootstrap 5.3 Tables</title>
+    <style>
+        .h-10 {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Bootstrap 5.3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="columns.html">Columns</a></li>
+                            <li><a class="dropdown-item" href="images.html">Images</a></li>
+                            <li><a class="dropdown-item" href="form.html">Forms</a></li>
+                            <li><a class="dropdown-item" href="tables.html">Tables</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center">
+        <h1 class="mb-5 mt-4 display-1">Bootstrap Tables</h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="display-6">Normal table</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Primary table</p>
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Secondary table</p>
+                <table class="table table-secondary">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Success table</p>
+                <table class="table table-success">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Danger table</p>
+                <table class="table table-danger">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Warning table</p>
+                <table class="table table-warning">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Info table</p>
+                <table class="table table-info">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Light table</p>
+                <table class="table table-light">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Dark table</p>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Striped table</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Striped columns table</p>
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Hover table</p>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Bordered table</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Primary bordered table</p>
+                <table class="table table-bordered border-primary">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Borderless table</p>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Small table</p>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Group divided table</p>
+                <table class="table table-light">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Align top table</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="h-10 align-top">
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr class="h-10 align-top">
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr class="h-10 align-top">
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Align middle table</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="h-10 align-middle">
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr class="h-10 align-middle">
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr class="h-10 align-middle">
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="display-6 mt-5">Align bottom table</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S. I.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="h-10 align-bottom">
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>6479643578</td>
+                        </tr>
+                        <tr class="h-10 align-bottom">
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>janedoe@gmail.com</td>
+                            <td>6783238913</td>
+                        </tr>
+                        <tr class="h-10 align-bottom">
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@gmail.com</td>
+                            <td>6543759527</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
